@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0nsnesnp770g"]
+
+[ext_resource type="PackedScene" uid="uid://co5af0fg7clyk" path="res://Scene/collectable.tscn" id="1_jcixp"]
+[ext_resource type="Texture2D" uid="uid://ron1cmdx3d48" path="res://Sprites/LifePot.png" id="2_r0qmw"]
+[ext_resource type="Resource" uid="uid://cidoxj2h3q023" path="res://inventory/life_pot.tres" id="2_s0xfj"]
+
+[node name="Collectable" instance=ExtResource("1_jcixp")]
+item_res = ExtResource("2_s0xfj")
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(0, -0.5)
+
+[node name="Sprite2D" parent="." index="1"]
+texture_filter = 1
+texture = ExtResource("2_r0qmw")
